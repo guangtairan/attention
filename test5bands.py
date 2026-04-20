@@ -4,7 +4,7 @@ import os
 import torch
 from mmseg.apis import init_model, inference_model
 from tqdm import tqdm
-
+import panda
 
 # =========================================================
 # 1. 基础配置
