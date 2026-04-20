@@ -131,4 +131,5 @@ class SegVisualizationHook(Hook):
                     data_sample=output,
                     show=self.show,
                     wait_time=self.wait_time,
-                    step=runner.iter)
+                    step=runner.iter,
+                    with_labels=False)
