@@ -1,0 +1,19 @@
+_base_ = [
+    '../_base_/models/deeplabv3_r50-d8.py',
+    '../_base_/datasets/forest.py', '../_base_/default_runtime.py',
+    '../_base_/schedules/schedule_20k.py'
+]
+custom_imports = dict(
+    imports=['mmseg.datasets.transforms.debug_transforms'],
+    allow_failed_imports=False
+)
+custom_imports = dict(
+    imports=['mmseg.models.backbones.seven_to_three_resnetv1c'],
+    allow_failed_imports=False
+)
+crop_size = (512, 512)
+data_preprocessor = dict(size=crop_size)
+model = dict(
+    data_preprocessor=data_preprocessor,
+    decode_head=dict(num_classes=2),
+    auxiliary_head=dict(num_classes=2))
