@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+staged_files="$(git diff --cached --name-only --diff-filter=ACMR)"
+
+if [[ -z "${staged_files}" ]]; then
+  exit 0
+fi
+
+violations=()
+while IFS= read -r file; do
+  case "${file}" in
+    data/*|work_dirs/*|*.pth)
+      violations+=("${file}")
+      ;;
+  esac
+done <<< "${staged_files}"
+
+if [[ ${#violations[@]} -gt 0 ]]; then
+  echo "[BLOCKED] 以下文件不允许提交到仓库："
+  for file in "${violations[@]}"; do
+    echo "  - ${file}"
+  done
+  echo
+  echo "请将这些文件从暂存区移除后再提交，例如："
+  echo "  git restore --staged <file>"
+  exit 1
+fi
+
+exit 0
