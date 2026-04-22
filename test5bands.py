@@ -11,12 +11,12 @@ import panda
 # =========================================================
 
 # 模型配置与权重
-config_file = r'E:\Desktop\mmsegmentation-seven\configs\danet\danet_r50-d8_4xb4-20k_forest-512x512.py' 
-checkpoint_file = r'E:\Desktop\mmsegmentation-seven\work_dirs\danet_r50-d8_4xb4-20k_forest-512x512\best_mIoU_epoch_100.pth'
+config_file = r'E:\Desktop\mmsegmentation-sci\configs\danet\danet_r50-d8_4xb4-20k_forest-512x512.py' 
+checkpoint_file = r'E:\Desktop\mmsegmentation-sci\work_dirs\danet_r50-d8_4xb4-20k_forest-512x512\best_mIoU_epoch_100.pth'
 
 # 输入输出目录
-input_folder =r'E:\Desktop\7.14peizhun\ronghe'
-output_folder = r'E:\Desktop\7.14peizhun\yuce\256.tif'
+input_folder =r'E:\Desktop\5.20peizhun\ronghe'
+output_folder = r'E:\Desktop\5.20peizhun\yuce\256.tif'
 
 # patch 设置
 crop_size = (512, 512)

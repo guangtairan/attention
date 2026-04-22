@@ -13,12 +13,12 @@ from tqdm import tqdm
 
 # 模型配置与权重
 # 注意：config_file 和 checkpoint_file 必须严格对应同一个模型
-config_file = r'E:\Desktop\mmsegmentation-five\work_dirs\mask2former_r50_8xb2-90k_forest-512x1024\20260322_230639\vis_data\config.py'
-checkpoint_file = r'E:\Desktop\mmsegmentation-five\work_dirs\mask2former_r50_8xb2-90k_forest-512x1024\epoch_100.pth'
+config_file = r'E:\Desktop\mmsegmentation-sci\work_dirs\mask2former_r50_8xb2-90k_forest-512x1024\20260322_230639\vis_data\config.py'
+checkpoint_file = r'E:\Desktop\mmsegmentation-sci\work_dirs\mask2former_r50_8xb2-90k_forest-512x1024\epoch_100.pth'
 
 # 输入输出目录（都写目录，不要写单个文件）
-input_folder = r'E:\Desktop\7.14peizhun\ronghe'
-output_folder = r'E:\Desktop\7.14peizhun\yuce\mask2former\256rgb'
+input_folder =r'E:\Desktop\5.20peizhun\ronghe'
+output_folder = r'E:\Desktop\5.20peizhun\yuce\256.tif'
 
 # patch 设置
 crop_size = (512, 512)
