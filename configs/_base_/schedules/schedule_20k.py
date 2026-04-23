@@ -1,4 +1,4 @@
-# Unified optimizer config for paper experiments
+﻿# Unified optimizer config for paper experiments
 optimizer = dict(type='AdamW', lr=1e-4, betas=(0.9, 0.999), weight_decay=0.01)
 
 optim_wrapper = dict(
@@ -22,12 +22,12 @@ param_scheduler = [
         by_epoch=True)
 ]
 
-train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=100, val_interval=50)
+train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=100, val_interval=1)
 val_cfg = dict(type='ValLoop')
 test_cfg = dict(type='TestLoop')
 
 default_hooks = dict(
-    timer=dict(type='IterTimerHook'),
+    timer=dict(type='EpochTimerHook'),
     logger=dict(type='LoggerHook', interval=20, log_metric_by_epoch=True),
     param_scheduler=dict(type='ParamSchedulerHook'),
     checkpoint=dict(
@@ -37,6 +37,6 @@ default_hooks = dict(
         max_keep_ckpts=2,
         save_best='mIoU'),
     sampler_seed=dict(type='DistSamplerSeedHook'),
-    visualization=dict(type='SegVisualizationHook', draw=True,interval=1))
+    visualization=dict(type='SegVisualizationHook', draw=False,interval=1))
 
 custom_hooks = [dict(type='TrainTimeHook')]
