@@ -12,7 +12,7 @@ forest 5-band dataset.
 - Backbone core: `ResNetV1c-50` (ImageNet pretrained in inner backbone)
 - Crop size: `512x512`
 - Schedule: `configs/_base_/schedules/schedule_20k.py` (epoch-based, 100 epochs)
-- Norm: `SyncBN` (for multi-GPU training)
+- Norm: `BN` (for single-GPU training)
 - Dual-4090 overrides in each matrix config:
   - `train_dataloader.batch_size=2`
   - `train_dataloader.num_workers=4`

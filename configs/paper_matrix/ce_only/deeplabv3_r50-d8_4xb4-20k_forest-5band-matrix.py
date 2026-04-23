@@ -1,4 +1,4 @@
-_base_ = [
+﻿_base_ = [
     '../_base_/models/deeplabv3_r50-d8.py',
     '../_base_/datasets/forest.py',
     '../_base_/default_runtime.py',
@@ -9,7 +9,7 @@ custom_imports = dict(
     imports=['mmseg.models.backbones.seven_to_three_resnetv1c'],
     allow_failed_imports=False)
 
-norm_cfg = dict(type='SyncBN', requires_grad=True)
+norm_cfg = dict(type='BN', requires_grad=True)
 crop_size = (512, 512)
 
 data_preprocessor = dict(
@@ -50,3 +50,4 @@ model = dict(
         num_classes=2,
         norm_cfg=norm_cfg,
         out_channels=2))
+
