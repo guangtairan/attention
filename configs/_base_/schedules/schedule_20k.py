@@ -1,4 +1,4 @@
-﻿# Unified optimizer config for paper experiments
+# Unified optimizer config for paper experiments
 optimizer = dict(type='AdamW', lr=1e-4, betas=(0.9, 0.999), weight_decay=0.01)
 
 optim_wrapper = dict(
