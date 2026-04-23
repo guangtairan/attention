@@ -1,4 +1,4 @@
-﻿_base_ = [
+_base_ = [
     '../_base_/models/nonlocal_r50-d8.py',
     '../_base_/datasets/forest.py',
     '../_base_/default_runtime.py',

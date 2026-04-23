@@ -1,4 +1,4 @@
-﻿_base_ = ['./_common_5band.py']
+_base_ = ['./_common_5band.py']
 
 loss_decode = [
     dict(type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0),
