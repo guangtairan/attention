@@ -51,23 +51,79 @@ python train.py configs/paper_matrix/danet_r50-d8_4xb4-20k_forest-5band-matrix.p
 ## Run Whole Matrix
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File tools/run_paper_matrix.ps1
+$configs = @(
+  "configs/paper_matrix/fcn_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/deeplabv3_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ccnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/gcnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/nonlocal_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/pam_only_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/cam_only_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/dnl_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/danet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ann_r50-d8_4xb4-20k_forest-5band-matrix.py"
+)
+foreach ($cfg in $configs) {
+  python train.py $cfg
+}
 ```
 
 ## Run Whole Matrix On 2x4090 (Recommended)
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File tools/run_paper_matrix_2gpu_amp.ps1
+$configs = @(
+  "configs/paper_matrix/fcn_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/deeplabv3_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ccnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/gcnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/nonlocal_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/pam_only_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/cam_only_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/dnl_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/danet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ann_r50-d8_4xb4-20k_forest-5band-matrix.py"
+)
+foreach ($cfg in $configs) {
+  python train.py $cfg --amp
+}
 ```
 
 ## Run CE-Only Control Matrix
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File tools/run_paper_matrix_ce_only.ps1
+$configs = @(
+  "configs/paper_matrix/ce_only/fcn_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/deeplabv3_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/ccnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/gcnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/nonlocal_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/pam_only_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/cam_only_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/dnl_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/danet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/ann_r50-d8_4xb4-20k_forest-5band-matrix.py"
+)
+foreach ($cfg in $configs) {
+  python train.py $cfg
+}
 ```
 
 ## Run CE-Only Control On 2x4090
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File tools/run_paper_matrix_ce_only_2gpu_amp.ps1
+$configs = @(
+  "configs/paper_matrix/ce_only/fcn_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/deeplabv3_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/ccnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/gcnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/nonlocal_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/pam_only_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/cam_only_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/dnl_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/danet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "configs/paper_matrix/ce_only/ann_r50-d8_4xb4-20k_forest-5band-matrix.py"
+)
+foreach ($cfg in $configs) {
+  python train.py $cfg --amp
+}
 ```

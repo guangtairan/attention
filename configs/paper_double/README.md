@@ -3,6 +3,20 @@
 Configs in this folder are designed for dual-attention ablation on the forest
 5-band setting.
 
+## Unified Training Policy
+
+All configs inherit `configs/_base_/schedules/schedule_20k.py`, so they follow
+the same training policy used for cross-family comparison:
+
+- Optimizer: `AdamW`
+- Base LR: `1e-4`
+- LR schedule: `LinearLR warmup + PolyLR`
+- Training length: `100 epochs`
+- Gradient accumulation: `accumulative_counts=4`
+- Adapter LR multiplier: `backbone.adapter lr_mult=5`
+- Validation interval: `50` epochs
+- Checkpoint interval: `3` epochs
+
 ## Configs
 
 - `d0_danet_parallel_r50_5band.py` (DANet baseline, PAM||CAM)
