@@ -107,3 +107,23 @@ Then pull the same branch on AutoDL before training.
 
 - After pulling latest code on AutoDL, run training from the repo root.
 - Keep `work_dir` unique per experiment/seed to avoid overwrite.
+
+## 6) Encoding safety (Important)
+
+- Always save project `.py` files as UTF-8 **without BOM**.
+- Avoid hidden characters in code/config files:
+  - BOM (`\ufeff`)
+  - zero-width chars (`\u200b`, `\u200c`, `\u200d`, `\u2060`)
+  - no-break space (`\xa0`)
+- If config parsing throws errors like `SyntaxError: invalid character in identifier`,
+  run cleanup before commit/push:
+
+```bash
+python scripts/clean_configs_hidden_chars.py --root configs
+```
+
+- Recommended pre-check before training:
+
+```bash
+python -m py_compile configs/_base_/schedules/schedule_20k.py
+```
