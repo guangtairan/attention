@@ -39,4 +39,4 @@ default_hooks = dict(
     sampler_seed=dict(type='DistSamplerSeedHook'),
     visualization=dict(type='SegVisualizationHook', draw=False,interval=1))
 
-custom_hooks = [dict(type='TrainTimeHook')]
+custom_hooks = [dict(type='TrainTimeHook'), dict(type='EpochLossHook')]
