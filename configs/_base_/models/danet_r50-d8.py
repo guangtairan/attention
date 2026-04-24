@@ -1,6 +1,5 @@
 # model settings
-# norm_cfg = dict(type='BN', requires_grad=True)
-norm_cfg = dict(type='GN',num_groups=32,requires_grad=True)
+norm_cfg = dict(type='SyncBN', requires_grad=True)
 # SegDataPreProcessor 在 train_step、val_step 和 test_step 中
 # 将数据传送到指定设备，之后处理后的数据将被进一步传递给模型。
 

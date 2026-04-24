@@ -1,4 +1,4 @@
-# Unified optimizer config for paper experiments
+﻿# Unified optimizer config for paper experiments
 optimizer = dict(type='AdamW', lr=1e-4, betas=(0.9, 0.999), weight_decay=0.01)
 
 optim_wrapper = dict(
@@ -37,6 +37,6 @@ default_hooks = dict(
         max_keep_ckpts=2,
         save_best='mIoU'),
     sampler_seed=dict(type='DistSamplerSeedHook'),
-    visualization=dict(type='SegVisualizationHook', draw=False,interval=1))
-
+    visualization=dict(type='SegVisualizationHook', draw=False)),
+    # visualization=dict(type='SegVisualizationHook', draw=True,interval=1))
 custom_hooks = [dict(type='TrainTimeHook'), dict(type='EpochLossHook')]

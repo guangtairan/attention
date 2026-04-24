@@ -1,8 +1,8 @@
 _base_ = [
-    '../_base_/models/danet_r50-d8.py',
-    '../_base_/datasets/forest.py',
-    '../_base_/default_runtime.py',
-    '../_base_/schedules/schedule_20k.py'
+    '../../_base_/models/danet_r50-d8.py',
+    '../../_base_/datasets/forest.py',
+    '../../_base_/default_runtime.py',
+    '../../_base_/schedules/schedule_20k.py'
 ]
 
 custom_imports = dict(
@@ -45,4 +45,5 @@ model = dict(
     decode_head=dict(num_classes=2, norm_cfg=norm_cfg),
     auxiliary_head=dict(
         num_classes=2, norm_cfg=norm_cfg))
+
 
