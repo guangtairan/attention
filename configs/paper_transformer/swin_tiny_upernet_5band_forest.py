@@ -37,7 +37,6 @@ model = dict(
     data_preprocessor=data_preprocessor,
     pretrained=None,
     backbone=dict(
-        _delete_=True,
         type='SevenToThreeResNetV1c',
         in_channels=5,
         adapter_init='first3_identity',

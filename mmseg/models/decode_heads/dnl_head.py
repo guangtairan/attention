@@ -60,9 +60,9 @@ class DisentangledNonLocal2d(NonLocal2d):
             theta_x = theta_x.permute(0, 2, 1)
             phi_x = self.phi(x).view(n, self.inter_channels, -1)
 
-        # subtract mean
-        theta_x -= theta_x.mean(dim=-2, keepdim=True)
-        phi_x -= phi_x.mean(dim=-1, keepdim=True)
+        # subtract mean (avoid inplace ops that break autograd graph)
+        theta_x = theta_x - theta_x.mean(dim=-2, keepdim=True)
+        phi_x = phi_x - phi_x.mean(dim=-1, keepdim=True)
 
         pairwise_func = getattr(self, self.mode)
         # pairwise_weight: [N, HxW, HxW]

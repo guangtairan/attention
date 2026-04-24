@@ -30,7 +30,6 @@ model = dict(
     type='EncoderDecoder',
     data_preprocessor=data_preprocessor,
     backbone=dict(
-        _delete_=True,
         type='SevenToThreeResNetV1c',
         in_channels=5,
         adapter_init='first3_identity',
@@ -163,6 +162,9 @@ model = dict(
 # Keep base lr from the unified schedule, only adjust parameter groups.
 embed_multi = dict(lr_mult=1.0, decay_mult=0.0)
 optim_wrapper = dict(
+    _delete_=True,
+    type='OptimWrapper',
+    optimizer=dict(type='AdamW', lr=1e-4, betas=(0.9, 0.999), weight_decay=0.01),
     clip_grad=dict(max_norm=0.01, norm_type=2),
     paramwise_cfg=dict(
         custom_keys={
