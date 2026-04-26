@@ -1,0 +1,17 @@
+﻿model,epochs_available,epoch_range,best_mIoU,best_epoch,E90_learning_speed,E95_learning_speed,Convergence_epoch_delta0.1_k5,delta,k,scalars_path,Convergence_epoch_strict_delta0.1_to_end,First_epoch_within_best_minus0.1,strict_delta,best_epoch_recomputed,best_mIoU_recomputed
+swin_tiny_upernet_5band_forest,100,1-100,84.89,78,3,6,21,0.1,5,swin_tiny_upernet_5band_forest\20260425_084642\vis_data\scalars.json,78,78,0.1,78,84.890
+danet_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.34,42,3,6,9,0.1,5,danet_r50-d8_4xb4-20k_forest-5band-matrix\20260424_131304\vis_data\scalars.json,42,42,0.1,42,84.340
+fcn_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.31,39,2,5,12,0.1,5,fcn_r50-d8_4xb4-20k_forest-5band-matrix\20260424_032630\vis_data\scalars.json,39,39,0.1,39,84.310
+ann_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.3,17,2,3,17,0.1,5,ann_r50-d8_4xb4-20k_forest-5band-matrix\20260424_215705\vis_data\scalars.json,17,17,0.1,17,84.300
+d4_parallel_residual_r50_5band,100,1-100,84.29,40,3,5,13,0.1,5,d4_parallel_residual_r50_5band\20260425_041629\vis_data\scalars.json,32,32,0.1,40,84.290
+d1_cam_to_pam_r50_5band,100,1-100,84.29,37,2,5,12,0.1,5,d1_cam_to_pam_r50_5band\20260425_003908\vis_data\scalars.json,37,37,0.1,37,84.290
+pam_only_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.28,71,3,4,15,0.1,5,pam_only_r50-d8_4xb4-20k_forest-5band-matrix\20260424_165720\vis_data\scalars.json,38,38,0.1,71,84.280
+dnl_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.27,90,3,6,12,0.1,5,dnl_r50-d8_4xb4-20k_forest-5band-matrix\20260424_203540\vis_data\scalars.json,33,33,0.1,90,84.270
+d0_danet_parallel_r50_5band,100,1-100,84.26,61,4,4,18,0.1,5,d0_danet_parallel_r50_5band\20260424_231542\vis_data\scalars.json,49,49,0.1,61,84.260
+gcnet_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.23,40,3,3,17,0.1,5,gcnet_r50-d8_4xb4-20k_forest-5band-matrix\20260424_154733\vis_data\scalars.json,23,23,0.1,40,84.230
+d3_parallel_concat_r50_5band,100,1-100,84.21,35,2,4,13,0.1,5,d3_parallel_concat_r50_5band\20260425_030410\vis_data\scalars.json,34,34,0.1,35,84.210
+ccnet_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.19,78,4,4,11,0.1,5,ccnet_r50-d8_4xb4-20k_forest-5band-matrix\20260424_115746\vis_data\scalars.json,76,76,0.1,78,84.190
+deeplabv3_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.12,27,4,5,20,0.1,5,deeplabv3_r50-d8_4xb4-20k_forest-5band-matrix\20260424_142955\vis_data\scalars.json,27,27,0.1,27,84.120
+cam_only_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.12,44,3,4,8,0.1,5,cam_only_r50-d8_4xb4-20k_forest-5band-matrix\20260424_104837\vis_data\scalars.json,33,33,0.1,44,84.120
+nonlocal_r50-d8_4xb4-20k_forest-5band-matrix,100,1-100,84.07,81,2,4,17,0.1,5,nonlocal_r50-d8_4xb4-20k_forest-5band-matrix\20260424_043403\vis_data\scalars.json,28,28,0.1,81,84.070
+d2_pam_to_cam_r50_5band,100,1-100,83.96,87,3,5,9,0.1,5,d2_pam_to_cam_r50_5band\20260425_015117\vis_data\scalars.json,42,42,0.1,87,83.960

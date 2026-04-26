@@ -1,0 +1,17 @@
+﻿model,num_epochs,total_train_time_sec,mean_epoch_time_sec,median_epoch_time_sec,std_epoch_time_sec,min_epoch_time_sec,max_epoch_time_sec,summary_path
+fcn_r50-d8_4xb4-20k_forest-5band-matrix,100,4001.667,36.599,36.361,1.180,31.963,38.259,fcn_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+cam_only_r50-d8_4xb4-20k_forest-5band-matrix,100,4102.297,37.712,37.839,1.406,32.098,39.913,cam_only_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+gcnet_r50-d8_4xb4-20k_forest-5band-matrix,100,4140.801,37.968,38.062,1.846,28.840,39.899,gcnet_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+pam_only_r50-d8_4xb4-20k_forest-5band-matrix,100,4161.892,38.248,38.256,1.004,34.439,39.758,pam_only_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+nonlocal_r50-d8_4xb4-20k_forest-5band-matrix,100,4222.111,38.592,38.307,0.977,34.547,39.968,nonlocal_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+d1_cam_to_pam_r50_5band,100,4282.316,39.472,39.465,1.141,35.665,41.375,d1_cam_to_pam_r50_5band\train_time_summary.json
+d4_parallel_residual_r50_5band,100,4291.960,39.587,39.383,0.915,36.692,41.315,d4_parallel_residual_r50_5band\train_time_summary.json
+d3_parallel_concat_r50_5band,100,4292.869,39.603,39.499,0.778,37.306,41.217,d3_parallel_concat_r50_5band\train_time_summary.json
+d2_pam_to_cam_r50_5band,100,4326.596,39.798,39.731,0.815,36.798,41.900,d2_pam_to_cam_r50_5band\train_time_summary.json
+ccnet_r50-d8_4xb4-20k_forest-5band-matrix,100,4471.283,40.935,41.007,1.313,34.966,43.336,ccnet_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+dnl_r50-d8_4xb4-20k_forest-5band-matrix,100,4544.589,41.816,41.703,0.845,39.656,43.398,dnl_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+deeplabv3_r50-d8_4xb4-20k_forest-5band-matrix,100,4583.318,41.817,41.641,1.157,38.022,43.565,deeplabv3_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+danet_r50-d8_4xb4-20k_forest-5band-matrix,100,4564.035,41.961,41.740,1.269,36.148,43.754,danet_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+ann_r50-d8_4xb4-20k_forest-5band-matrix,100,4633.501,42.877,42.772,0.868,40.002,44.346,ann_r50-d8_4xb4-20k_forest-5band-matrix\train_time_summary.json
+d0_danet_parallel_r50_5band,100,4959.537,45.838,45.834,0.991,43.559,47.652,d0_danet_parallel_r50_5band\train_time_summary.json
+swin_tiny_upernet_5band_forest,100,6683.310,59.747,59.307,1.295,54.300,61.632,swin_tiny_upernet_5band_forest\train_time_summary.json

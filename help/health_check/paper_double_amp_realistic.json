@@ -1,0 +1,67 @@
+{
+  "fp32": {
+    "configs/paper_double\\d0_danet_parallel_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 0,
+      "last_scale": null
+    },
+    "configs/paper_double\\d1_cam_to_pam_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 0,
+      "last_scale": null
+    },
+    "configs/paper_double\\d2_pam_to_cam_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 0,
+      "last_scale": null
+    },
+    "configs/paper_double\\d3_parallel_concat_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 0,
+      "last_scale": null
+    },
+    "configs/paper_double\\d4_parallel_residual_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 0,
+      "last_scale": null
+    },
+    "configs/paper_double\\d5_gated_fusion_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 0,
+      "last_scale": null
+    }
+  },
+  "amp": {
+    "configs/paper_double\\d0_danet_parallel_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 3,
+      "last_scale": 8192.0
+    },
+    "configs/paper_double\\d1_cam_to_pam_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 2,
+      "last_scale": 16384.0
+    },
+    "configs/paper_double\\d2_pam_to_cam_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 2,
+      "last_scale": 16384.0
+    },
+    "configs/paper_double\\d3_parallel_concat_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 2,
+      "last_scale": 16384.0
+    },
+    "configs/paper_double\\d4_parallel_residual_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 3,
+      "last_scale": 8192.0
+    },
+    "configs/paper_double\\d5_gated_fusion_r50_5band.py": {
+      "ok": true,
+      "overflow_steps": 1,
+      "last_scale": 32768.0
+    }
+  },
+  "device": "cuda"
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-04-26T11:33:09.438006",
+  "args": {
+    "group": null,
+    "config_glob": [
+      "configs/paper_phase4/*.py"
+    ],
+    "smoke": true,
+    "device": "cpu",
+    "batch_size": 2,
+    "height": 64,
+    "width": 64,
+    "report": "help/health_check/phase4_transformer_smoke.json",
+    "fail_fast": false
+  },
+  "device": "cpu",
+  "summary": {
+    "total": 2,
+    "parse_ok": 2,
+    "build_ok": 2,
+    "smoke_total": 2,
+    "smoke_ok": 2,
+    "failed": 0
+  },
+  "results": [
+    {
+      "config": "configs\\paper_phase4\\segformer_b2_5band_forest.py",
+      "parse_ok": true,
+      "build_ok": true,
+      "smoke_ok": true,
+      "stage": "smoke",
+      "error": null
+    },
+    {
+      "config": "configs\\paper_phase4\\swin_tiny_upernet_5band_forest_phase4.py",
+      "parse_ok": true,
+      "build_ok": true,
+      "smoke_ok": true,
+      "stage": "smoke",
+      "error": null
+    }
+  ]
+}

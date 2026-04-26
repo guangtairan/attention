@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-04-24T19:14:47.982350",
+  "args": {
+    "group": [
+      "transformer"
+    ],
+    "config_glob": [],
+    "smoke": false,
+    "device": "auto",
+    "batch_size": 2,
+    "height": 64,
+    "width": 64,
+    "report": "work_dirs/health_check/_selfcheck_transformer.json",
+    "fail_fast": false
+  },
+  "device": "cuda",
+  "summary": {
+    "total": 2,
+    "parse_ok": 2,
+    "build_ok": 2,
+    "smoke_total": 0,
+    "smoke_ok": 0,
+    "failed": 0
+  },
+  "results": [
+    {
+      "config": "configs\\paper_transformer\\mask2former_swin_t_5band_forest.py",
+      "parse_ok": true,
+      "build_ok": true,
+      "smoke_ok": null,
+      "stage": "build",
+      "error": null
+    },
+    {
+      "config": "configs\\paper_transformer\\swin_tiny_upernet_5band_forest.py",
+      "parse_ok": true,
+      "build_ok": true,
+      "smoke_ok": null,
+      "stage": "build",
+      "error": null
+    }
+  ]
+}

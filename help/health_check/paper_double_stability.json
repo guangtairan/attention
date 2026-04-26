@@ -1,0 +1,485 @@
+{
+  "device": "cuda",
+  "fp32": {
+    "configs/paper_double\\d0_danet_parallel_r50_5band.py": {
+      "ok": true,
+      "reason": "stable",
+      "history_tail": [
+        {
+          "iter": 55,
+          "total": 203.3057861328125,
+          "decode.pam_cam.loss_ce": 0.7304229736328125,
+          "decode.pam_cam.loss_dice": 0.29587799310684204,
+          "decode.pam_cam.acc_seg": 49.8321533203125,
+          "decode.pam.loss_ce": 0.6992512941360474,
+          "decode.pam.loss_dice": 0.2939373552799225,
+          "decode.pam.acc_seg": 49.8992919921875,
+          "decode.cam.loss_ce": 0.6990118026733398,
+          "decode.cam.loss_dice": 0.2936558723449707,
+          "decode.cam.acc_seg": 50.018310546875,
+          "aux.loss_ce": 0.2796701192855835,
+          "aux.loss_aux_dice": 0.11772873252630234,
+          "aux.acc_seg": 50.146484375
+        },
+        {
+          "iter": 56,
+          "total": 203.64088439941406,
+          "decode.pam_cam.loss_ce": 0.7070801854133606,
+          "decode.pam_cam.loss_dice": 0.2949233651161194,
+          "decode.pam_cam.acc_seg": 50.0701904296875,
+          "decode.pam.loss_ce": 0.6981962323188782,
+          "decode.pam.loss_dice": 0.2936168313026428,
+          "decode.pam.acc_seg": 49.896240234375,
+          "decode.cam.loss_ce": 0.6984127759933472,
+          "decode.cam.loss_dice": 0.29346439242362976,
+          "decode.cam.acc_seg": 50.5126953125,
+          "aux.loss_ce": 0.2809273898601532,
+          "aux.loss_aux_dice": 0.11791384220123291,
+          "aux.acc_seg": 49.7772216796875
+        },
+        {
+          "iter": 57,
+          "total": 203.67189025878906,
+          "decode.pam_cam.loss_ce": 0.7040501832962036,
+          "decode.pam_cam.loss_dice": 0.2943199574947357,
+          "decode.pam_cam.acc_seg": 50.1678466796875,
+          "decode.pam.loss_ce": 0.6999558806419373,
+          "decode.pam.loss_dice": 0.2938128411769867,
+          "decode.pam.acc_seg": 50.3173828125,
+          "decode.cam.loss_ce": 0.7067155241966248,
+          "decode.cam.loss_dice": 0.29463279247283936,
+          "decode.cam.acc_seg": 49.7467041015625,
+          "aux.loss_ce": 0.2799466848373413,
+          "aux.loss_aux_dice": 0.11767325550317764,
+          "aux.acc_seg": 50.048828125
+        },
+        {
+          "iter": 58,
+          "total": 204.42897033691406,
+          "decode.pam_cam.loss_ce": 0.7322406768798828,
+          "decode.pam_cam.loss_dice": 0.29590126872062683,
+          "decode.pam_cam.acc_seg": 50.2685546875,
+          "decode.pam.loss_ce": 0.7072588205337524,
+          "decode.pam.loss_dice": 0.29438650608062744,
+          "decode.pam.acc_seg": 50.3326416015625,
+          "decode.cam.loss_ce": 0.7026572227478027,
+          "decode.cam.loss_dice": 0.2943480908870697,
+          "decode.cam.acc_seg": 50.5859375,
+          "aux.loss_ce": 0.2801898121833801,
+          "aux.loss_aux_dice": 0.11795603483915329,
+          "aux.acc_seg": 49.81689453125
+        },
+        {
+          "iter": 59,
+          "total": 203.1158905029297,
+          "decode.pam_cam.loss_ce": 0.7150408625602722,
+          "decode.pam_cam.loss_dice": 0.2950461208820343,
+          "decode.pam_cam.acc_seg": 49.7650146484375,
+          "decode.pam.loss_ce": 0.7012900114059448,
+          "decode.pam.loss_dice": 0.29405876994132996,
+          "decode.pam.acc_seg": 50.1983642578125,
+          "decode.cam.loss_ce": 0.6988572478294373,
+          "decode.cam.loss_dice": 0.2939528822898865,
+          "decode.cam.acc_seg": 50.042724609375,
+          "aux.loss_ce": 0.2806869149208069,
+          "aux.loss_aux_dice": 0.11771916598081589,
+          "aux.acc_seg": 49.713134765625
+        }
+      ]
+    },
+    "configs/paper_double\\d1_cam_to_pam_r50_5band.py": {
+      "ok": true,
+      "reason": "stable",
+      "history_tail": [
+        {
+          "iter": 55,
+          "total": 101.3580322265625,
+          "decode.loss_ce": 0.705889880657196,
+          "decode.loss_dice": 0.2942034900188446,
+          "decode.acc_seg": 49.7589111328125,
+          "aux.loss_ce": 0.2806350886821747,
+          "aux.loss_aux_dice": 0.12003350257873535,
+          "aux.acc_seg": 50.1983642578125
+        },
+        {
+          "iter": 56,
+          "total": 100.94554138183594,
+          "decode.loss_ce": 0.7003973126411438,
+          "decode.loss_dice": 0.2939956784248352,
+          "decode.acc_seg": 49.810791015625,
+          "aux.loss_ce": 0.2804289758205414,
+          "aux.loss_aux_dice": 0.11932672560214996,
+          "aux.acc_seg": 49.7406005859375
+        },
+        {
+          "iter": 57,
+          "total": 100.89168548583984,
+          "decode.loss_ce": 0.7112845182418823,
+          "decode.loss_dice": 0.29463067650794983,
+          "decode.acc_seg": 49.9908447265625,
+          "aux.loss_ce": 0.2813495099544525,
+          "aux.loss_aux_dice": 0.12016665190458298,
+          "aux.acc_seg": 49.493408203125
+        },
+        {
+          "iter": 58,
+          "total": 100.78404235839844,
+          "decode.loss_ce": 0.6998226642608643,
+          "decode.loss_dice": 0.293958842754364,
+          "decode.acc_seg": 49.54833984375,
+          "aux.loss_ce": 0.28099262714385986,
+          "aux.loss_aux_dice": 0.11962226778268814,
+          "aux.acc_seg": 49.84130859375
+        },
+        {
+          "iter": 59,
+          "total": 101.10821533203125,
+          "decode.loss_ce": 0.7057580947875977,
+          "decode.loss_dice": 0.29410818219184875,
+          "decode.acc_seg": 49.5880126953125,
+          "aux.loss_ce": 0.2797752320766449,
+          "aux.loss_aux_dice": 0.11849147081375122,
+          "aux.acc_seg": 50.1220703125
+        }
+      ]
+    },
+    "configs/paper_double\\d2_pam_to_cam_r50_5band.py": {
+      "ok": true,
+      "reason": "stable",
+      "history_tail": [
+        {
+          "iter": 55,
+          "total": 100.77913665771484,
+          "decode.loss_ce": 0.6969277858734131,
+          "decode.loss_dice": 0.2935405373573303,
+          "decode.acc_seg": 49.664306640625,
+          "aux.loss_ce": 0.2808380126953125,
+          "aux.loss_aux_dice": 0.11818362772464752,
+          "aux.acc_seg": 49.725341796875
+        },
+        {
+          "iter": 56,
+          "total": 101.62937927246094,
+          "decode.loss_ce": 0.7037191390991211,
+          "decode.loss_dice": 0.2939731776714325,
+          "decode.acc_seg": 50.103759765625,
+          "aux.loss_ce": 0.2820240557193756,
+          "aux.loss_aux_dice": 0.11772660166025162,
+          "aux.acc_seg": 50.128173828125
+        },
+        {
+          "iter": 57,
+          "total": 101.4500732421875,
+          "decode.loss_ce": 0.7019071578979492,
+          "decode.loss_dice": 0.293955534696579,
+          "decode.acc_seg": 50.1953125,
+          "aux.loss_ce": 0.28140708804130554,
+          "aux.loss_aux_dice": 0.11786854267120361,
+          "aux.acc_seg": 49.859619140625
+        },
+        {
+          "iter": 58,
+          "total": 101.8522720336914,
+          "decode.loss_ce": 0.7042678594589233,
+          "decode.loss_dice": 0.29382455348968506,
+          "decode.acc_seg": 50.35400390625,
+          "aux.loss_ce": 0.2814550995826721,
+          "aux.loss_aux_dice": 0.11801113933324814,
+          "aux.acc_seg": 50.1007080078125
+        },
+        {
+          "iter": 59,
+          "total": 101.88038635253906,
+          "decode.loss_ce": 0.6995220184326172,
+          "decode.loss_dice": 0.2939283549785614,
+          "decode.acc_seg": 49.932861328125,
+          "aux.loss_ce": 0.28084927797317505,
+          "aux.loss_aux_dice": 0.11780847609043121,
+          "aux.acc_seg": 50.555419921875
+        }
+      ]
+    },
+    "configs/paper_double\\d3_parallel_concat_r50_5band.py": {
+      "ok": true,
+      "reason": "stable",
+      "history_tail": [
+        {
+          "iter": 55,
+          "total": 101.11006927490234,
+          "decode.loss_ce": 0.7020208239555359,
+          "decode.loss_dice": 0.2939342260360718,
+          "decode.acc_seg": 49.9267578125,
+          "aux.loss_ce": 0.28225430846214294,
+          "aux.loss_aux_dice": 0.11872457712888718,
+          "aux.acc_seg": 49.786376953125
+        },
+        {
+          "iter": 56,
+          "total": 101.9859619140625,
+          "decode.loss_ce": 0.6986207962036133,
+          "decode.loss_dice": 0.29384496808052063,
+          "decode.acc_seg": 50.1678466796875,
+          "aux.loss_ce": 0.2800304591655731,
+          "aux.loss_aux_dice": 0.11836875975131989,
+          "aux.acc_seg": 50.42724609375
+        },
+        {
+          "iter": 57,
+          "total": 101.25990295410156,
+          "decode.loss_ce": 0.703830361366272,
+          "decode.loss_dice": 0.29400965571403503,
+          "decode.acc_seg": 49.713134765625,
+          "aux.loss_ce": 0.28083640336990356,
+          "aux.loss_aux_dice": 0.11855491250753403,
+          "aux.acc_seg": 50.1495361328125
+        },
+        {
+          "iter": 58,
+          "total": 101.00943756103516,
+          "decode.loss_ce": 0.703540563583374,
+          "decode.loss_dice": 0.2940477132797241,
+          "decode.acc_seg": 49.7222900390625,
+          "aux.loss_ce": 0.28070971369743347,
+          "aux.loss_aux_dice": 0.11871444433927536,
+          "aux.acc_seg": 49.89013671875
+        },
+        {
+          "iter": 59,
+          "total": 101.55685424804688,
+          "decode.loss_ce": 0.6990392804145813,
+          "decode.loss_dice": 0.2936141788959503,
+          "decode.acc_seg": 50.0244140625,
+          "aux.loss_ce": 0.28093239665031433,
+          "aux.loss_aux_dice": 0.11846848577260971,
+          "aux.acc_seg": 50.140380859375
+        }
+      ]
+    },
+    "configs/paper_double\\d4_parallel_residual_r50_5band.py": {
+      "ok": true,
+      "reason": "stable",
+      "history_tail": [
+        {
+          "iter": 55,
+          "total": 101.5575942993164,
+          "decode.loss_ce": 0.7168006300926208,
+          "decode.loss_dice": 0.29557469487190247,
+          "decode.acc_seg": 49.76806640625,
+          "aux.loss_ce": 0.28078901767730713,
+          "aux.loss_aux_dice": 0.11794493347406387,
+          "aux.acc_seg": 50.37841796875
+        },
+        {
+          "iter": 56,
+          "total": 101.38526916503906,
+          "decode.loss_ce": 0.7056995034217834,
+          "decode.loss_dice": 0.29468539357185364,
+          "decode.acc_seg": 49.822998046875,
+          "aux.loss_ce": 0.2819351255893707,
+          "aux.loss_aux_dice": 0.11821035295724869,
+          "aux.acc_seg": 50.1617431640625
+        },
+        {
+          "iter": 57,
+          "total": 101.30622863769531,
+          "decode.loss_ce": 0.7146260738372803,
+          "decode.loss_dice": 0.295845091342926,
+          "decode.acc_seg": 49.8748779296875,
+          "aux.loss_ce": 0.28125709295272827,
+          "aux.loss_aux_dice": 0.11826229095458984,
+          "aux.acc_seg": 50.0213623046875
+        },
+        {
+          "iter": 58,
+          "total": 100.89628601074219,
+          "decode.loss_ce": 0.7135990858078003,
+          "decode.loss_dice": 0.29556357860565186,
+          "decode.acc_seg": 49.7955322265625,
+          "aux.loss_ce": 0.2813650667667389,
+          "aux.loss_aux_dice": 0.11844959110021591,
+          "aux.acc_seg": 49.6917724609375
+        },
+        {
+          "iter": 59,
+          "total": 101.06233215332031,
+          "decode.loss_ce": 0.7097076177597046,
+          "decode.loss_dice": 0.2955268323421478,
+          "decode.acc_seg": 49.700927734375,
+          "aux.loss_ce": 0.2808694839477539,
+          "aux.loss_aux_dice": 0.11802710592746735,
+          "aux.acc_seg": 49.957275390625
+        }
+      ]
+    },
+    "configs/paper_double\\d5_gated_fusion_r50_5band.py": {
+      "ok": true,
+      "reason": "stable",
+      "history_tail": [
+        {
+          "iter": 55,
+          "total": 101.17648315429688,
+          "decode.loss_ce": 0.6983110904693604,
+          "decode.loss_dice": 0.29347118735313416,
+          "decode.acc_seg": 49.957275390625,
+          "aux.loss_ce": 0.28053972125053406,
+          "aux.loss_aux_dice": 0.11778326332569122,
+          "aux.acc_seg": 49.8291015625
+        },
+        {
+          "iter": 56,
+          "total": 101.74105834960938,
+          "decode.loss_ce": 0.6986332535743713,
+          "decode.loss_dice": 0.293529212474823,
+          "decode.acc_seg": 50.06103515625,
+          "aux.loss_ce": 0.2802926003932953,
+          "aux.loss_aux_dice": 0.117648184299469,
+          "aux.acc_seg": 50.2899169921875
+        },
+        {
+          "iter": 57,
+          "total": 100.6166000366211,
+          "decode.loss_ce": 0.697891354560852,
+          "decode.loss_dice": 0.2938486933708191,
+          "decode.acc_seg": 49.6124267578125,
+          "aux.loss_ce": 0.28201907873153687,
+          "aux.loss_aux_dice": 0.11798381805419922,
+          "aux.acc_seg": 49.6124267578125
+        },
+        {
+          "iter": 58,
+          "total": 101.39816284179688,
+          "decode.loss_ce": 0.6960626244544983,
+          "decode.loss_dice": 0.29359814524650574,
+          "decode.acc_seg": 50.1007080078125,
+          "aux.loss_ce": 0.28147315979003906,
+          "aux.loss_aux_dice": 0.11786852031946182,
+          "aux.acc_seg": 49.908447265625
+        },
+        {
+          "iter": 59,
+          "total": 101.15394592285156,
+          "decode.loss_ce": 0.6997572183609009,
+          "decode.loss_dice": 0.2940347194671631,
+          "decode.acc_seg": 49.4720458984375,
+          "aux.loss_ce": 0.2805580496788025,
+          "aux.loss_aux_dice": 0.1176278218626976,
+          "aux.acc_seg": 50.2899169921875
+        }
+      ]
+    }
+  },
+  "amp": {
+    "configs/paper_double\\d0_danet_parallel_r50_5band.py": {
+      "ok": false,
+      "reason": "non-finite grad at iter 0",
+      "history_tail": [
+        {
+          "iter": 0,
+          "total": 203.63131713867188,
+          "decode.pam_cam.loss_ce": 0.7371141910552979,
+          "decode.pam_cam.loss_dice": 0.35222840309143066,
+          "decode.pam_cam.acc_seg": 49.969482421875,
+          "decode.pam.loss_ce": 0.7090122103691101,
+          "decode.pam.loss_dice": 0.32963961362838745,
+          "decode.pam.acc_seg": 50.128173828125,
+          "decode.cam.loss_ce": 0.7597054243087769,
+          "decode.cam.loss_dice": 0.33581221103668213,
+          "decode.cam.acc_seg": 50.103759765625,
+          "aux.loss_ce": 0.2845132052898407,
+          "aux.loss_aux_dice": 0.1385430097579956,
+          "aux.acc_seg": 49.7833251953125
+        }
+      ]
+    },
+    "configs/paper_double\\d1_cam_to_pam_r50_5band.py": {
+      "ok": false,
+      "reason": "non-finite grad at iter 0",
+      "history_tail": [
+        {
+          "iter": 0,
+          "total": 101.56817626953125,
+          "decode.loss_ce": 0.7203587293624878,
+          "decode.loss_dice": 0.3238004446029663,
+          "decode.acc_seg": 49.749755859375,
+          "aux.loss_ce": 0.2832053601741791,
+          "aux.loss_aux_dice": 0.12483910471200943,
+          "aux.acc_seg": 50.3662109375
+        }
+      ]
+    },
+    "configs/paper_double\\d2_pam_to_cam_r50_5band.py": {
+      "ok": false,
+      "reason": "non-finite grad at iter 0",
+      "history_tail": [
+        {
+          "iter": 0,
+          "total": 101.66205596923828,
+          "decode.loss_ce": 0.713824987411499,
+          "decode.loss_dice": 0.3274109959602356,
+          "decode.acc_seg": 50.2838134765625,
+          "aux.loss_ce": 0.28684455156326294,
+          "aux.loss_aux_dice": 0.1447647511959076,
+          "aux.acc_seg": 49.9053955078125
+        }
+      ]
+    },
+    "configs/paper_double\\d3_parallel_concat_r50_5band.py": {
+      "ok": false,
+      "reason": "non-finite grad at iter 0",
+      "history_tail": [
+        {
+          "iter": 0,
+          "total": 101.56813049316406,
+          "decode.loss_ce": 0.7152863144874573,
+          "decode.loss_dice": 0.3157353401184082,
+          "decode.acc_seg": 49.884033203125,
+          "aux.loss_ce": 0.28393325209617615,
+          "aux.loss_aux_dice": 0.13110804557800293,
+          "aux.acc_seg": 50.238037109375
+        }
+      ]
+    },
+    "configs/paper_double\\d4_parallel_residual_r50_5band.py": {
+      "ok": false,
+      "reason": "non-finite grad at iter 0",
+      "history_tail": [
+        {
+          "iter": 0,
+          "total": 101.39636993408203,
+          "decode.loss_ce": 0.7302224040031433,
+          "decode.loss_dice": 0.3797898590564728,
+          "decode.acc_seg": 49.8870849609375,
+          "aux.loss_ce": 0.28605255484580994,
+          "aux.loss_aux_dice": 0.12542808055877686,
+          "aux.acc_seg": 49.98779296875
+        }
+      ]
+    },
+    "configs/paper_double\\d5_gated_fusion_r50_5band.py": {
+      "ok": false,
+      "reason": "non-finite grad at iter 1",
+      "history_tail": [
+        {
+          "iter": 0,
+          "total": 101.0780258178711,
+          "decode.loss_ce": 0.7036774158477783,
+          "decode.loss_dice": 0.34874439239501953,
+          "decode.acc_seg": 49.7528076171875,
+          "aux.loss_ce": 0.293437123298645,
+          "aux.loss_aux_dice": 0.13194608688354492,
+          "aux.acc_seg": 49.847412109375
+        },
+        {
+          "iter": 1,
+          "total": 101.06153869628906,
+          "decode.loss_ce": 0.8443150520324707,
+          "decode.loss_dice": 0.3531961143016815,
+          "decode.acc_seg": 49.6826171875,
+          "aux.loss_ce": 0.3012894093990326,
+          "aux.loss_aux_dice": 0.13342110812664032,
+          "aux.acc_seg": 49.7467041015625
+        }
+      ]
+    }
+  }
+}
