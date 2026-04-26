@@ -193,7 +193,7 @@ def run_smoke(model, cfg, device: str, batch_size: int, height: int, width: int)
 
 def make_default_report_path() -> str:
     stamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
-    folder = os.path.join("work_dirs", "health_check")
+    folder = os.path.join("help", "health_check")
     os.makedirs(folder, exist_ok=True)
     return os.path.join(folder, f"health_check_{stamp}.json")
 

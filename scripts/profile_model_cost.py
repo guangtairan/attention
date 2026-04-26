@@ -23,6 +23,7 @@ from mmengine.runner.checkpoint import load_checkpoint
 from mmengine.utils import import_modules_from_strings
 
 from mmseg.registry import MODELS
+from mmseg.utils import register_all_modules
 
 
 def parse_args():
@@ -79,7 +80,12 @@ def _flops_str(model, input_shape: Tuple[int, int, int]) -> str:
             self.inner = inner
 
         def forward(self, x):
-            return self.inner(inputs=x, mode='tensor')
+            try:
+                return self.inner(inputs=x, mode='tensor')
+            except TypeError:
+                # Some decode heads (e.g. Mask2Former) require samples even in
+                # internal forward. Fallback to predict mode for profiling.
+                return self.inner(inputs=x, mode='predict')
 
     wrapper = TensorForwardWrapper(model).eval()
     try:
@@ -106,9 +112,15 @@ def _latency_ms(model,
     def _run_once():
         if use_amp and device == 'cuda':
             with torch.cuda.amp.autocast():
-                _ = model(inputs=x, mode='tensor')
+                try:
+                    _ = model(inputs=x, mode='tensor')
+                except TypeError:
+                    _ = model(inputs=x, mode='predict')
         else:
-            _ = model(inputs=x, mode='tensor')
+            try:
+                _ = model(inputs=x, mode='tensor')
+            except TypeError:
+                _ = model(inputs=x, mode='predict')
 
     for _ in range(warmup):
         _run_once()
@@ -127,6 +139,7 @@ def _latency_ms(model,
 
 def main():
     args = parse_args()
+    register_all_modules(init_default_scope=True)
     cfg = Config.fromfile(args.config)
 
     if args.device == 'cuda' and not torch.cuda.is_available():
