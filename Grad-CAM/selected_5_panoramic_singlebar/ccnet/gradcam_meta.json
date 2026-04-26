@@ -1,0 +1,105 @@
+{
+  "name": "ccnet",
+  "config": "configs/paper_matrix/ccnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+  "checkpoint": "work_dirs/ccnet_r50-d8_4xb4-20k_forest-5band-matrix/epoch_100.pth",
+  "fg_index": 1,
+  "target_mode": "panoramic",
+  "shared_colorbar": "Grad-CAM/selected_5_panoramic_singlebar\\cam_colorbar.png",
+  "images": [
+    {
+      "image_path": "data/dataset5pix/forest/images/validation/cropped_2_17.tif",
+      "decode_head_type": "CCHead",
+      "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+      "attention_hint": "attention modules in head: cca",
+      "target": "panoramic",
+      "saved": {
+        "orig": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_2_17_orig.png",
+        "pred": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_2_17_pred.png",
+        "pred_idx": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_2_17_pred_idx.png",
+        "pred_fgmask": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_2_17_pred_fgmask.png",
+        "cam": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_2_17_cam.png",
+        "overlay": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_2_17_overlay.png"
+      },
+      "class_ratio": {
+        "0": 0.4660530090332031,
+        "1": 0.5339469909667969
+      }
+    },
+    {
+      "image_path": "data/dataset5pix/forest/images/validation/cropped_4_31.tif",
+      "decode_head_type": "CCHead",
+      "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+      "attention_hint": "attention modules in head: cca",
+      "target": "panoramic",
+      "saved": {
+        "orig": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_4_31_orig.png",
+        "pred": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_4_31_pred.png",
+        "pred_idx": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_4_31_pred_idx.png",
+        "pred_fgmask": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_4_31_pred_fgmask.png",
+        "cam": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_4_31_cam.png",
+        "overlay": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_4_31_overlay.png"
+      },
+      "class_ratio": {
+        "0": 0.7854080200195312,
+        "1": 0.21459197998046875
+      }
+    },
+    {
+      "image_path": "data/dataset5pix/forest/images/validation/cropped_6_23.tif",
+      "decode_head_type": "CCHead",
+      "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+      "attention_hint": "attention modules in head: cca",
+      "target": "panoramic",
+      "saved": {
+        "orig": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_6_23_orig.png",
+        "pred": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_6_23_pred.png",
+        "pred_idx": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_6_23_pred_idx.png",
+        "pred_fgmask": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_6_23_pred_fgmask.png",
+        "cam": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_6_23_cam.png",
+        "overlay": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_6_23_overlay.png"
+      },
+      "class_ratio": {
+        "0": 0.9443855285644531,
+        "1": 0.055614471435546875
+      }
+    },
+    {
+      "image_path": "data/dataset5pix/forest/images/validation/cropped_9_17.tif",
+      "decode_head_type": "CCHead",
+      "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+      "attention_hint": "attention modules in head: cca",
+      "target": "panoramic",
+      "saved": {
+        "orig": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_9_17_orig.png",
+        "pred": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_9_17_pred.png",
+        "pred_idx": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_9_17_pred_idx.png",
+        "pred_fgmask": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_9_17_pred_fgmask.png",
+        "cam": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_9_17_cam.png",
+        "overlay": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_9_17_overlay.png"
+      },
+      "class_ratio": {
+        "0": 0.9776802062988281,
+        "1": 0.022319793701171875
+      }
+    },
+    {
+      "image_path": "data/dataset5pix/forest/images/validation/cropped_11_15.tif",
+      "decode_head_type": "CCHead",
+      "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+      "attention_hint": "attention modules in head: cca",
+      "target": "panoramic",
+      "saved": {
+        "orig": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_11_15_orig.png",
+        "pred": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_11_15_pred.png",
+        "pred_idx": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_11_15_pred_idx.png",
+        "pred_fgmask": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_11_15_pred_fgmask.png",
+        "cam": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_11_15_cam.png",
+        "overlay": "Grad-CAM/selected_5_panoramic_singlebar\\ccnet\\cropped_11_15_overlay.png"
+      },
+      "class_ratio": {
+        "0": 0.7634353637695312,
+        "1": 0.23656463623046875
+      }
+    }
+  ]
+}

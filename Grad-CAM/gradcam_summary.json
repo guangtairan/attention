@@ -1,0 +1,221 @@
+[
+  {
+    "name": "ccnet",
+    "config": "configs/paper_matrix/ccnet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+    "checkpoint": "work_dirs/ccnet_r50-d8_4xb4-20k_forest-5band-matrix/epoch_100.pth",
+    "fg_index": 0,
+    "images": [
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10.tif",
+        "decode_head_type": "CCHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: cca",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\ccnet\\cropped_10_10_orig.png",
+          "pred": "Grad-CAM\\ccnet\\cropped_10_10_pred.png",
+          "cam": "Grad-CAM\\ccnet\\cropped_10_10_cam.png",
+          "overlay": "Grad-CAM\\ccnet\\cropped_10_10_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_180.tif",
+        "decode_head_type": "CCHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: cca",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\ccnet\\cropped_10_10_180_orig.png",
+          "pred": "Grad-CAM\\ccnet\\cropped_10_10_180_pred.png",
+          "cam": "Grad-CAM\\ccnet\\cropped_10_10_180_cam.png",
+          "overlay": "Grad-CAM\\ccnet\\cropped_10_10_180_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_270.tif",
+        "decode_head_type": "CCHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: cca",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\ccnet\\cropped_10_10_270_orig.png",
+          "pred": "Grad-CAM\\ccnet\\cropped_10_10_270_pred.png",
+          "cam": "Grad-CAM\\ccnet\\cropped_10_10_270_cam.png",
+          "overlay": "Grad-CAM\\ccnet\\cropped_10_10_270_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_90.tif",
+        "decode_head_type": "CCHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: cca",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\ccnet\\cropped_10_10_90_orig.png",
+          "pred": "Grad-CAM\\ccnet\\cropped_10_10_90_pred.png",
+          "cam": "Grad-CAM\\ccnet\\cropped_10_10_90_cam.png",
+          "overlay": "Grad-CAM\\ccnet\\cropped_10_10_90_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_28.tif",
+        "decode_head_type": "CCHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: cca",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\ccnet\\cropped_10_28_orig.png",
+          "pred": "Grad-CAM\\ccnet\\cropped_10_28_pred.png",
+          "cam": "Grad-CAM\\ccnet\\cropped_10_28_cam.png",
+          "overlay": "Grad-CAM\\ccnet\\cropped_10_28_overlay.png"
+        }
+      }
+    ]
+  },
+  {
+    "name": "danet",
+    "config": "configs/paper_matrix/danet_r50-d8_4xb4-20k_forest-5band-matrix.py",
+    "checkpoint": "work_dirs/danet_r50-d8_4xb4-20k_forest-5band-matrix/epoch_100.pth",
+    "fg_index": 0,
+    "images": [
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10.tif",
+        "decode_head_type": "DAHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: pam, cam",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\danet\\cropped_10_10_orig.png",
+          "pred": "Grad-CAM\\danet\\cropped_10_10_pred.png",
+          "cam": "Grad-CAM\\danet\\cropped_10_10_cam.png",
+          "overlay": "Grad-CAM\\danet\\cropped_10_10_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_180.tif",
+        "decode_head_type": "DAHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: pam, cam",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\danet\\cropped_10_10_180_orig.png",
+          "pred": "Grad-CAM\\danet\\cropped_10_10_180_pred.png",
+          "cam": "Grad-CAM\\danet\\cropped_10_10_180_cam.png",
+          "overlay": "Grad-CAM\\danet\\cropped_10_10_180_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_270.tif",
+        "decode_head_type": "DAHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: pam, cam",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\danet\\cropped_10_10_270_orig.png",
+          "pred": "Grad-CAM\\danet\\cropped_10_10_270_pred.png",
+          "cam": "Grad-CAM\\danet\\cropped_10_10_270_cam.png",
+          "overlay": "Grad-CAM\\danet\\cropped_10_10_270_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_90.tif",
+        "decode_head_type": "DAHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: pam, cam",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\danet\\cropped_10_10_90_orig.png",
+          "pred": "Grad-CAM\\danet\\cropped_10_10_90_pred.png",
+          "cam": "Grad-CAM\\danet\\cropped_10_10_90_cam.png",
+          "overlay": "Grad-CAM\\danet\\cropped_10_10_90_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_28.tif",
+        "decode_head_type": "DAHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "attention modules in head: pam, cam",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\danet\\cropped_10_28_orig.png",
+          "pred": "Grad-CAM\\danet\\cropped_10_28_pred.png",
+          "cam": "Grad-CAM\\danet\\cropped_10_28_cam.png",
+          "overlay": "Grad-CAM\\danet\\cropped_10_28_overlay.png"
+        }
+      }
+    ]
+  },
+  {
+    "name": "fcn",
+    "config": "configs/paper_matrix/fcn_r50-d8_4xb4-20k_forest-5band-matrix.py",
+    "checkpoint": "work_dirs/fcn_r50-d8_4xb4-20k_forest-5band-matrix/epoch_100.pth",
+    "fg_index": 0,
+    "images": [
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10.tif",
+        "decode_head_type": "FCNHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "no explicit decode-head attention module mapping; using last pre-classifier feature",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\fcn\\cropped_10_10_orig.png",
+          "pred": "Grad-CAM\\fcn\\cropped_10_10_pred.png",
+          "cam": "Grad-CAM\\fcn\\cropped_10_10_cam.png",
+          "overlay": "Grad-CAM\\fcn\\cropped_10_10_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_180.tif",
+        "decode_head_type": "FCNHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "no explicit decode-head attention module mapping; using last pre-classifier feature",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\fcn\\cropped_10_10_180_orig.png",
+          "pred": "Grad-CAM\\fcn\\cropped_10_10_180_pred.png",
+          "cam": "Grad-CAM\\fcn\\cropped_10_10_180_cam.png",
+          "overlay": "Grad-CAM\\fcn\\cropped_10_10_180_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_270.tif",
+        "decode_head_type": "FCNHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "no explicit decode-head attention module mapping; using last pre-classifier feature",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\fcn\\cropped_10_10_270_orig.png",
+          "pred": "Grad-CAM\\fcn\\cropped_10_10_270_pred.png",
+          "cam": "Grad-CAM\\fcn\\cropped_10_10_270_cam.png",
+          "overlay": "Grad-CAM\\fcn\\cropped_10_10_270_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_10_90.tif",
+        "decode_head_type": "FCNHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "no explicit decode-head attention module mapping; using last pre-classifier feature",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\fcn\\cropped_10_10_90_orig.png",
+          "pred": "Grad-CAM\\fcn\\cropped_10_10_90_pred.png",
+          "cam": "Grad-CAM\\fcn\\cropped_10_10_90_cam.png",
+          "overlay": "Grad-CAM\\fcn\\cropped_10_10_90_overlay.png"
+        }
+      },
+      {
+        "image_path": "data/dataset5pix/forest/images/validation\\cropped_10_28.tif",
+        "decode_head_type": "FCNHead",
+        "hook_path": "decode_head.conv_seg (forward_pre_hook: input tensor)",
+        "attention_hint": "no explicit decode-head attention module mapping; using last pre-classifier feature",
+        "target": "foreground_region_weighted_logit_mean",
+        "saved": {
+          "orig": "Grad-CAM\\fcn\\cropped_10_28_orig.png",
+          "pred": "Grad-CAM\\fcn\\cropped_10_28_pred.png",
+          "cam": "Grad-CAM\\fcn\\cropped_10_28_cam.png",
+          "overlay": "Grad-CAM\\fcn\\cropped_10_28_overlay.png"
+        }
+      }
+    ]
+  }
+]

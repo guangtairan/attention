@@ -1,0 +1,27 @@
+{
+  "source": "gt",
+  "val_dir": "data/dataset5pix/forest/images/validation",
+  "k": 5,
+  "selected": [
+    {
+      "path": "data/dataset5pix/forest/images/validation\\cropped_10_10.tif",
+      "fg_ratio": 0.0
+    },
+    {
+      "path": "data/dataset5pix/forest/images/validation\\cropped_10_10_180.tif",
+      "fg_ratio": 0.0
+    },
+    {
+      "path": "data/dataset5pix/forest/images/validation\\cropped_10_10_270.tif",
+      "fg_ratio": 0.0
+    },
+    {
+      "path": "data/dataset5pix/forest/images/validation\\cropped_10_10_90.tif",
+      "fg_ratio": 0.0
+    },
+    {
+      "path": "data/dataset5pix/forest/images/validation\\cropped_10_28.tif",
+      "fg_ratio": 0.0
+    }
+  ]
+}
